@@ -3,7 +3,6 @@ import { Layout, Icon } from 'antd';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { MenuRoutes } from './pages/menu.routes'
 import { PageLoading } from './components'
-import Test from './pages/test.page'
 import SiderMenu from './components/sider-menu/sider.menu'
 import './App.css';
 const { Header, Content, Footer, } = Layout
@@ -14,7 +13,6 @@ const App: React.FC = () => {
   const handleCollapsed = () => {
     setCollapsed(!collapsed);
   }
-  console.log(collapsed, 'app');
   return (
     <div className="App">
       <header className="App-header">
